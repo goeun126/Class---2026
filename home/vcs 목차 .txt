@@ -1,0 +1,11 @@
+condition001 = if 
+                     if ~ elif
+                     if ~ else
+loop = for / whie
+operator005 = operator / 연수 모듈
+operator004 = and / or
+operator003 = 비교연산자
+operator002 = 할당연산자
+inputData = input
+list = 컨테이너 자료형
+list02 = 리스트정렬

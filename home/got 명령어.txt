@@ -1,0 +1,34 @@
+
+#git
+* Clear = 삭제
+* END 뜰경우 q를 누르면 원복
+
+
+git 관리 하고싶은 파일 또는 폴터에  Local rero 으로 변경 필요
+
+git init = 명령어 입력시 로컬  레파지토리(Loal Repo)  진행
+git config --global user.email "igoeun126@gmail.com" = 나 자신의 메일 등록
+git config --global user.name "goeun126" = 이름 정함
+git config user.email = 유저 이메일 확인
+git config user.name = 유저 이름 확인
+git config --list =설정 확인
+---------------------------------------------------------------------
+git status = 파일 관리 상태확인 / Untracked files = 빨간글씨로 나오면 배제대상
+파일버전 관리가 필요할때 깃 관리 대상 (명령어 : git 에드Add 파일명 / . 을찍을 경우 전부 컴잇으로 넘어감) 에 올려놓고 (명령어 : git 컴잇 commit -m "올리는 이유 기재 ") 로컬레파지토리에 들어가서 관리가 되는것
+git restore --staged 파일명 = add 올린 파일을 되돌리는 명령어
+git log = 작업물 확인
+git reflog = 해당 작업물의 대한 이전 버전에 ID
+git checkout master = 중간정리 (나 = 해드HDAB 와 git 프로그램 = 마스터master 은 한세트 안그러면 오류 생길 가능성 ↑)
+git reset --hard ID= hdab 와 master 같이 이전버전으로 이동
+-------------------------------------------------------------------
+Git Hub 사용 방법 / https://github.com/
+
+보내다 Push푸쉬 / Cone클론 or pull폴 받다
+
+git remote add origin Remote 링크 = github Remote Repo에 링크 등록 
+git remote remove origin = 등록된 Remote링크 삭제
+git remote -v = Remote Repo에 등록된 링크 확인
+git branch -M main = git hub으로 공유시 master 은 안쓰기 때문에 main 으로 바꿔 줘야함
+git push origin main = 작업물을 Remote Repo로 전송
+git clone Remote 링크 . = git hud에 새로운 pc에서 작업물 cone 하는 작업 / 새로운 파일에서 작업해야함
+git pull origin main = git hub 등록되어있는 새로올린 작업물 가져오기
