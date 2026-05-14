@@ -9,3 +9,4 @@ operator002 = 할당연산자
 inputData = input
 list = 컨테이너 자료형
 list02 = 리스트정렬
+temp = split

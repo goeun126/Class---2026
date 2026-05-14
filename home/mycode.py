@@ -255,3 +255,53 @@ while True:
 
     print(f'{count}번째 시도')
 '''
+
+# 프로그램 요구사항
+# 1.현재 자리 상태를 전부 출력하기
+# 2. 사용자에게 원하는 자리 번호 입력받기
+# 3.예약할 자리 번호 :
+#   빈자리라면 "예약 완료" 출력 해당 자리 상태를 "사용중" 으로 변경 이미 사용중이라면 이미 사용중인 자리입니다 출력
+# 5.예약 후 전체 자리 상태 다시 출력하기
+
+seats = {
+    1: "빈자리",
+    2: "사용중",
+    3: "빈자리",
+    4: "사용중",
+    5: "빈자리"
+}
+
+for key, value in seats.items():
+    print(f'자리 번호:{key}, 상태:{value}')
+
+userSeat = int(input('원하는 자리를 입력하세요.'))
+
+if seats[userSeat] == "빈자리":
+   seats[userSeat] = '사용중'
+   print('예약이 완료되었습니다.')
+else:
+    print('사용중인 자리입니다.')
+
+print(f'현재 자리상태:{seats}')
+
+
+# 프로그램 요구사
+
+# 1. 각 음식이 몇 번 주문됐는지 딕셔너리에 저장하기
+# 2. 가장 많이 주문된 음식 찾기
+# 3. 총 주문 개수 출력하기
+# 4. 사용자가 음식 이름 입력하면
+# 몇 번 주문됐는지 출력하기
+
+orders = ["치킨", "피자", "치킨", "햄버거", "피자", "치킨"]
+foodCount = {}
+num = 0
+for food in orders:
+    if food not in foodCount:
+        foodCount[food] = 1
+
+    else:
+        foodCount[food] += 1
+
+for food in foodCount:
+    foodCount[food] < num
