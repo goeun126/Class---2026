@@ -32,3 +32,4 @@ git branch -M main = git hub으로 공유시 master 은 안쓰기 때문에 main
 git push origin main = 작업물을 Remote Repo로 전송
 git clone Remote 링크 . = git hud에 새로운 pc에서 작업물 cone 하는 작업 / 새로운 파일에서 작업해야함
 git pull origin main = git hub 등록되어있는 새로올린 작업물 가져오기
+git push origin main --force = 강제 푸쉬
