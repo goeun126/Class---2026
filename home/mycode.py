@@ -254,7 +254,7 @@ while True:
         print('더 작은 수입니다.')
 
     print(f'{count}번째 시도')
-'''
+
 
 # 프로그램 요구사항
 # 1.현재 자리 상태를 전부 출력하기
@@ -285,23 +285,118 @@ else:
 print(f'현재 자리상태:{seats}')
 
 
-# 프로그램 요구사
+# 프로그램 요구사항
 
-# 1. 각 음식이 몇 번 주문됐는지 딕셔너리에 저장하기
-# 2. 가장 많이 주문된 음식 찾기
-# 3. 총 주문 개수 출력하기
-# 4. 사용자가 음식 이름 입력하면
-# 몇 번 주문됐는지 출력하기
+# 1. 학생 점수를 5개 입력받기
+# 2. 모든 점수 출력하기
+# 3. 가장 높은 점수 출력하기
+# 4. 평균 점수 출력하기
+# 5. 80점 이상인 학생 수 출력하기
+# 6. 프로그램 종료 전 총합 출력하기
 
-orders = ["치킨", "피자", "치킨", "햄버거", "피자", "치킨"]
-foodCount = {}
-num = 0
-for food in orders:
-    if food not in foodCount:
-        foodCount[food] = 1
+scores = []
 
-    else:
-        foodCount[food] += 1
+for index in range(5):
+    userScore = int(input('학생 점수를 입력하세요.'))
+    scores.append(userScore)
+    print(f'전체 점수:{scores}')
+    
+    max_scores= max(scores)
+    print(f'최고점수:{max_scores}')
 
-for food in foodCount:
-    foodCount[food] < num
+    totalScores = sum(scores)
+    highCount = 0
+    if userScore >= 80:
+        highCount += 1
+
+print(f'총합 : {totalScores}')
+print(f'평균 점수: {totalScores / len(scores)}')
+print(f'80점 이상 학생수:{highCount}')
+
+# 1. 과일 가격을 딕셔너리에 저장하기
+#   - 사과: 1500원
+#   - 바나나: 1000원
+#   - 딸기: 3000원
+# 2. 사용자에게 각 과일 구매 개수 입력받기
+# 3. 각 과일별 구매 금액 출력하기
+#   (가격 × 개수)
+# 4. 총 구매 금액 출력하기
+# 5. 가장 비싼 과일 이름 출력하기 (가격 기준)
+
+fruitPrice = {
+    '사과':1500,
+    '바나나':1000,
+    '딸기':3000
+}
+
+totalFruit = 0
+
+def apple():
+    global totalFruit
+    totalFruit += fruitPrice['사과'] * apple_count
+    print(f'사과 구매 금액: {apple_count * fruitPrice['사과']}')
+
+def banana():
+    global totalFruit
+    totalFruit += fruitPrice['바나나'] * banana_count
+    print(f'바나나 구매 금액: {banana_count * fruitPrice['바나나']}')
+
+def strawberry():
+    global totalFruit
+    totalFruit += fruitPrice['딸기'] * strawberry_count
+    print(f'딸기 구매 금액: {strawberry_count * fruitPrice['딸기']}')
+
+
+apple_count = int(input('사과 구매 개수:'))
+banana_count = int(input('바나나 구매 개수:'))
+strawberry_count = int(input('딸기 구매 개수:'))
+
+apple()
+banana()
+strawberry()
+
+print(f'사과 구매 개수:{apple_count}개')
+print(f'바나나 구매 개수:{banana_count}개')
+print(f'딸기 구매 개수:{strawberry_count}개')
+
+print(f'총 금액: {totalFruit}원')
+maxPriceFruit = max(fruitPrice, key=fruitPrice.get)
+print(f'가장 비싼 과일: {maxPriceFruit}')
+'''
+# 1. 음식 가격을 딕셔너리에 저장
+#    - 햄버거: 5000원
+#    - 감자튀김: 3000원
+#    - 콜라: 1500원
+
+menuPrice = {
+    '햄버거':5000,
+    '감자튀김':3000,
+    '콜라':1500
+}
+# 2. 각각 함수 만들기 (def 사용)
+# 3. 각 함수는 다음을 해야 함:
+#    - 개수 입력받기
+#    - 총 금액 계산 (가격 × 개수)
+#    - 출력하기
+def hamburger():
+    print(f'햄버거 총 금액:{burger_count * menuPrice['햄버거']}원')
+
+def fries():
+    print(f'감자튀김 총 금액:{fries_count * menuPrice['감자튀김']}원')
+
+def coke():
+    print(f'콜라 구매 개수 총 금액:{coke_count * menuPrice['콜라']}원')
+
+burger_count = int(input('햄버거 구매 개수: '))
+fries_count = int(input('감자튀김 구매 개수:'))
+coke_count = int(input('콜라 구매 개수'))
+
+burger_total = hamburger()
+fries_total = fries()
+coke_total = coke()
+
+total = burger_total + fries_total + coke_total
+
+# 4. 전체 총 금액 출력하기
+
+print(f'총 금액{total}원')
