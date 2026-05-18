@@ -10,3 +10,4 @@ inputData = input
 list = 컨테이너 자료형
 list02 = 리스트정렬
 temp = split
+ex04 = 구조분해 문법 / CRUD
