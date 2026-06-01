@@ -1,0 +1,17 @@
+condition001 = if 
+                     if ~ elif
+                     if ~ else
+loop = for / whie
+operator005 = operator / 연수 모듈
+operator004 = and / or
+operator003 = 비교연산자
+operator002 = 할당연산자
+inputData = input
+list = 컨테이너 자료형
+list02 = 리스트정렬
+temp = split
+ex04 = 구조분해 문법 / CRUD
+function01 = 함수
+function02 = 매개변수
+module_ex = 모듈 
+txt_ex = 파일 파이썬에서 만들기 / 예외처리

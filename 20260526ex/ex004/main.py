@@ -1,0 +1,33 @@
+from our_dice import Dice
+
+def sortNumbers(*numbers):
+    list = sorted(numbers)
+    list.sort(reverse=True)
+    return list
+
+
+gamer1Dice = Dice()
+gamer2Dice = Dice()
+gamer3Dice = Dice()
+
+for i in range(5):
+    gamer1Dice.playDice()
+    gamer2Dice.playDice()
+    gamer3Dice.playDice()
+
+print(f'gamer1:{gamer1Dice.getNumbers()}')
+print(f'gamer2:{gamer2Dice.getNumbers()}')
+print(f'gamer3:{gamer3Dice.getNumbers()}')
+
+
+print(f'sum of gamer1:{gamer1Dice.getSum()}')
+print(f'sum of gamer2:{gamer2Dice.getSum()}')
+print(f'sum of gamer3:{gamer3Dice.getSum()}')
+
+sorteNumbers = sortNumbers(gamer1Dice.getSum(),
+                           gamer2Dice.getSum(),
+                           gamer3Dice.getSum())
+
+print(f'1등:{sorteNumbers[0]}Winner')
+print(f'2등:{sorteNumbers[1]}')
+print(f'3등:{sorteNumbers[2]}')

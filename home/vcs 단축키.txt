@@ -1,0 +1,12 @@
+ctrl + B = 왼쪽 파일창 닫고 열기
+ctrl + F5 = run(시작)
+ctrl + alt + 방향키 = 커서 확장
+shift + alt + 방향기 = 행 복사
+alt  + 방향키 = 행변경
+shift  + 방향키 = 열 선택
+ctrl + shift + P 설정연후 Transform to Uppercase = 일괄대문자
+TAH = 해당 열에 집어넣기
+Shift + Tab = 들여쓰기를 왼쪽으로 한칸 당겨주는 단축키
+F1 + vpl 검색하면 = 새로운 VSC 오픈
+python -m 작동시킬 파일 및 모듈
+ex )python -m member.member_service

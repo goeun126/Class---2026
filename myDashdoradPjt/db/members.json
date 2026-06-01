@@ -1,0 +1,26 @@
+{
+    "saei": {
+        "mId": "saei",
+        "mPw": "1234",
+        "mMail": "saei@gmail.com",
+        "mPhone": "010-5555-6666",
+        "mRegDate": "2026-06-01 14:09:46",
+        "mModDate": "2026-06-01 14:09:46"
+    },
+    "jjajjang": {
+        "mId": "jjajjang",
+        "mPw": "1234",
+        "mMail": "jjajjang@naver.com",
+        "mPhone": "010-7777-8888",
+        "mRegDate": "2026-06-01 14:25:42",
+        "mModDate": "2026-06-01 14:25:42"
+    },
+    "gildong": {
+        "mId": "gildong",
+        "mPw": "1234",
+        "mMail": "gildong@gmail.com",
+        "mPhone": "010-1234-5678",
+        "mRegDate": "2026-06-01 15:33:54",
+        "mModDate": "2026-06-01 15:33:54"
+    }
+}

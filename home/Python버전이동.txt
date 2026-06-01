@@ -1,0 +1,19 @@
+버전이동 VSC / 버전 설치 파워쉘
+
+pyenv install --list = 버전 확인
+pyenv install 버전입력 = 해당 버전으로 이동
+git --version = 깃 버전 확인
+git clone https://github.com/pyenv-win/pyenv-win.git $HOME\.pyenv = win 설치
+C:\Users\사용자명\.pyenv 해당 경로에 설치가됨
+pyenv global 원하는 버전 = 해당 버전으로 이동
+pyenv versions = 버전 확인
+cd ../ ../ = 상위 폴더로 이동
+./ 현재
+/ 최대 상위 폴더로 이동
+dir = 폴더확인
+pyenv local 원하는 버전 = 해당 폴더만 버전이동
+python -m venv venv = 가상환경 만들기 하고 난뒤
+.\venv\Scripts\activate = 파일에서 가상환경 활성화 실행
+pip install numpy
+pip install pandas = 모듈 설치
+deactivate = venv 끄는 방법

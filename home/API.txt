@@ -1,0 +1,11 @@
+where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=날씨&ackey=1fpp0ukx
+ ㄴ> 파라미타 형식
+ json란 프로그램 끼리 데이터를 주고 받기 쉽게 만든 텍스트 형식(딕셔너리 형태로 많이 운영됨.)
+
+parameters = f'?query={urllib.parse.quote(srcText)}&start={start}&display={display}' https://openapi.naver.com/v1/searchquery={srcText}&start={start}&display={display} 형식으로 붙음
+ 
+ 100번대 = 요청진행중
+ 200번대 = 성공
+ 300번대 = 리다이렌트(다른요청)
+ 400번대 = 클러이언트 오류
+ 500번대 = 서버오류
