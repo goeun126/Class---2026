@@ -3,6 +3,7 @@ import os
 import json
 from util import util_time
 from todo.config import *
+import config as root_config
 
 class TodoService:
     def __init__(self):
@@ -132,6 +133,8 @@ class TodoService:
                 del myTodos[todoNumber-1]
                 self.save_todos(self.todos)
                 print('정상적으로 삭제 완료되었습니다.')
+
+                print(self.load_todos())
 
             elif menuNum == COMPLETE_CHANGE:
                 self.todos = self.load_todos()
