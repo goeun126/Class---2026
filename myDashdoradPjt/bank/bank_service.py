@@ -70,7 +70,8 @@ class BankService:
 
                 for idx, myAccount in enumerate(myAccounts.keys()):
                     print('=' * 80)
-                    print(f"[{idx + 1}]: {myAccount}: {myAccounts[myAccount]['balance']}")
+                    print(f'{myAccounts[myAccount]['uAccountName']}')
+                    print(f"[{idx + 1}]: {myAccounts[myAccount]['uAccountName']}계좌: {myAccount}:  {myAccounts[myAccount]['balance']}")
                     print('-' * 80)
                     print('날짜/시간 \t\t 내역 \t\t\t 입금 \t\t 출금')
                     for history in myAccounts[myAccount]['histories']:
