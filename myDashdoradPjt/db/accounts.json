@@ -1,8 +1,40 @@
 {
     "gildong": {
-        "42769c63-bbea-4127-9a89-b81cdaa7ee50": {
-            "baiance": 0,
+        "2f6e5aca-daad-4ff9-99f0-842dd0c958e9": {
+            "uAccountName": "급여",
+            "balance": 11000000,
             "passwors": 1234,
+            "histories": [
+                {
+                    "wAmount": 1000000,
+                    "wHistory": "딸램용돈",
+                    "wRegDate": "2026-06-02 10:39:51",
+                    "wModDate": "2026-06-02 10:39:51"
+                },
+                {
+                    "dAmount": 1000000,
+                    "dHistory": "엄마용돈",
+                    "dRegData": "2026-06-02 10:39:26",
+                    "dMpdData": "2026-06-02 10:39:26"
+                },
+                {
+                    "dAmount": 1000000,
+                    "dHistory": "아빠용돈",
+                    "dRegData": "2026-06-02 10:10:51",
+                    "dMpdData": "2026-06-02 10:10:51"
+                },
+                {
+                    "dAmount": 10000000,
+                    "dHistory": "아빠용돈",
+                    "dRegData": "2026-06-02 10:01:01",
+                    "dMpdData": "2026-06-02 10:01:01"
+                }
+            ]
+        },
+        "88c7a879-7487-449b-b988-9785a21f3b62": {
+            "uAccountName": "생활비",
+            "balance": 0,
+            "password": 1234,
             "histories": []
         }
     }

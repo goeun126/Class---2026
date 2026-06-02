@@ -116,7 +116,7 @@ class MemberSerive:
             elif menuNum == member_config.DELETE:
                 self.delete()
             elif menuNum == member_config.SERVICE_OUT:
-                print('메인메뉴로 돌아갑니다.')
+                print('처음으로 돌아갑니다.')
                 flag = False
 
     def init_database(self):

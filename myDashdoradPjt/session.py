@@ -1,4 +1,4 @@
-signInedMemberId = 'gildong'
+signInedMemberId = ''
 
 # 보내는 기능(set)
 def setsignInedMemberId(mId=''):
