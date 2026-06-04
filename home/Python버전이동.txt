@@ -17,3 +17,6 @@ python -m venv venv = 가상환경 만들기 하고 난뒤
 pip install numpy
 pip install pandas = 모듈 설치
 deactivate = venv 끄는 방법
+
+
+4f30fa613b2dce14f7e3c6e61be185e93db21d6945c1971d8aae7f4b320f6aca

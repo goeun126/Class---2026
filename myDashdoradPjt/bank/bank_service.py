@@ -120,7 +120,7 @@ class BankService:
                         print('현재 입력한 계좌번호는 없는 번호입니다.')
                         print('\n---------------현재 계좌 현황-----------------')
                         for idx, account in enumerate(myAccounts.keys()):
-                            print(f'[{idx}]:{account}')
+                            print(f'[{idx}]:{myAccounts[myAccount]['uAccountName']}{account}')
                         print('\n--------------------------------------------')
 
                     else:
@@ -161,7 +161,7 @@ class BankService:
                         print('The account was not found!!')
                         print('\nMy Accounts-----------------------------------')
                         for idx, account in enumerate(myAccounts.keys()):
-                            print(f'[{idx+1}]: {account}')
+                            print(f'[{idx+1}]:{myAccounts[myAccount]['uAccountName']} {account}')
                         print('----------------------------------------------\n')
                     else:
                         break
