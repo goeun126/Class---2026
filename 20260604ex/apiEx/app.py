@@ -95,10 +95,14 @@ def main():
 
     jsonResult, natName, ed, dataEND = getTourismStatesService(nat_cd, ed_cd, nStaetYear, nEndYear)
 
-    print(f'jsonResult:{jsonResult}')
-    print(f'natName:{natName}')
-    print(f'ed:{ed}')
-    print(f'dataEND:{dataEND}')
+    if natName == '':
+        print('데이터 수집 오류 서버 담당자 에게 문의 하세요')
+
+    else:
+        print('데이터 수집 성공')
+        with open(f'./{natName}_{ed}_{nStaetYear}_{dataEND}.json', 'w', encoding='utf-8') as f:
+            jsonFilb = json.dumps(jsonResuit, indent=4, sort_keys=True, ensure_ascii=False)
+            f.writable.jsonFilb
 
 if __name__=='__main__':
     main()
