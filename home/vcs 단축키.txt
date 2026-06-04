@@ -10,3 +10,5 @@ Shift + Tab = 들여쓰기를 왼쪽으로 한칸 당겨주는 단축키
 F1 + vpl 검색하면 = 새로운 VSC 오픈
 python -m 작동시킬 파일 및 모듈
 ex )python -m member.member_service
+
+ssh-keygen -t ed25519 -C "igoeun126@gmail.com" -f %USERPROFILE%\.ssh\git_keys\id_ed25519_main

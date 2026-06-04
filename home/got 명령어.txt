@@ -25,6 +25,7 @@ git add .;  git commit -m "메세지" ; git push origin main = VSC 허브
 Git Hub 사용 방법 / https://github.com/
 
 보내다 Push푸쉬 / Cone클론 or pull폴 받다
+.gitignore = 올리고 싶지 않은 파일이나 폴더의 이름을 적어두기만 하면 끝 / 파일 하나 만들어야함
 
 git remote add origin Remote 링크 = github Remote Repo에 링크 등록 
 git remote remove origin = 등록된 Remote링크 삭제

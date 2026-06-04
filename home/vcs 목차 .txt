@@ -15,3 +15,4 @@ function01 = 함수
 function02 = 매개변수
 module_ex = 모듈 
 txt_ex = 파일 파이썬에서 만들기 / 예외처리
+C:\lge\python\opencv_python\ app002 = OpenCV 사용 방법

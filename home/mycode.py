@@ -704,15 +704,9 @@ while flag:
         flag = False 
 '''
 
+import random
 
-drink = {
-    1: ("카페라떼", 4000),
-    2: ("아메리카노", 3000)
-}
+food =  ['카', '소', '파']
 
-orderCount = int(input('주문 개수: '))
-quantity = int(input('1. 카페라떼    2. 아메리카노 '))
-
-for drinks in drink:
-    if quantity == 1:
-        
+food = random.choice(food)
+print(f'{food}')

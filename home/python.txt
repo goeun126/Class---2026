@@ -9,6 +9,22 @@ a >= b a가 b보다 크거나 같다. => True or False / 진실 혹은 거짓
 a < b a가 b보다 작다. => True or False / 진실 혹은 거짓
 a <= b a가 b보다 작거나 같다. => True or False / 진실 혹은 거짓
 
+OpenCV 모듈
+# 이미지 불러와서 출력하기
+변수명 = cv2.imread('.경로 및 이미지 파일 이름')
+print(f'{변수명.shape}') 이미지 크기 출력
+cv2.imshow(왼도우 이름, 이미지 이름) 이미지 출력
+cv2.waitKey(3000) # 이미지 출력 시간
+
+IMREAD_ANYCOLOR = BGR 유지
+IMREAD_GRAYSCALE = 흑백
+IMREAD_UNCHANGED = 알파 유지
+
+
+# 아이템 끼리 비교 / numpy
+print(비교할 변수명 == 비교할 변수명)
+https://hoazzinews.tistory.com/77 / 77 ~ 88 참고 
+
 :0>2 = 빈자리를 0으로 채워서 최소 2글자 짜리 문자열로 만드는 함수
 
 # 예외처리
